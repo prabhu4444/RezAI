@@ -27,6 +27,6 @@
       ]
     }
   },
-  "include": ["src"],
+  "include": ["src", "src/pages/SignInPage.tsx"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

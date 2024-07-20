@@ -1,9 +1,13 @@
-import { ThemeProvider } from "@/components/theme/theme-provider"
+import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { ThemeProvider } from '@/components/theme/theme-provider';
 
 export default function Providers({ children }: { children: React.ReactNode }) {
   return (
-    <ThemeProvider>
-      {children}
-    </ThemeProvider>
-  )
+    <Router>
+      <ThemeProvider>
+        {children}
+      </ThemeProvider>
+    </Router>
+  );
 }
